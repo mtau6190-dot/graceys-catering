@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gracey's Catering</title>
+
+  
+    <!-- SEO Meta Tags --> <meta name="description" content="Gracey's Catering brings elegance and flavor to every event. From family gatherings to corporate functions, we create unforgettable dining experiences."> 
+     <meta name="keywords" content="catering, Port Moresby, PNG, Gracey's Catering, events, weddings, food service"> <!-- Open Graph (Social Sharing) --> 
+     <meta property="og:title" content="Gracey's Catering"> 
+     <meta property="og:description" content="Delicious moments, beautifully served. Catering for family gatherings, weddings, and corporate events."> 
+     <meta property="og:image" content="images/hero-banner.jpg"> 
+     <meta property="og:url" content="https://graceyscatering.com"> 
+     <meta property="og:type" content="website">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    
+<!-- Header -->
+<header>
+  <img src="images/logo1.png" alt="Gracey's Catering Logo" class="site-logo">
+
+  <!-- Hamburger icon -->
+  <div class="menu-toggle">☰</div>
+
+  <nav>
+    <ul>
+      <li><a href="#hero" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#order">Order</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('nav ul');
+    const links = document.querySelectorAll('nav ul li a');
+
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        toggle.textContent = navLinks.classList.contains('active') ? "✖" : "☰";
+      });
+    }
+
+    // Close dropdown when a link is clicked
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) {
+          navLinks.classList.remove('active');
+          toggle.textContent = "☰"; // reset icon
+        }
+      });
+    });
+  });
+</script>
+
+
+
+
+
+<!-- Hero -->
+<section id="hero" class="hero">
+  <h1 class="fade-in delay-1">Gracey's Catering</h1>
+  <p class="fade-in delay-2">Delicious moments, beautifully served.</p>
+  <a href="#menu" class="btn fade-in delay-3">Explore Our Menu</a>
+
+  <!-- Animated Images -->
+  <div class="hero-images">
+    <img src="images/Dish_1-removebg-preview.png" alt="Traditional PNG dish" class="fade-in delay-4">
+    <img src="images/Dish_2-removebg-preview.png" alt="Modern styled PNG dish" class="fade-in delay-5">
+    <img src="images/Dish_3.jpg" alt="Coconut-based PNG dish" class="fade-in delay-6">
+  </div>
+</section>
+
+
+ <!-- About Section -->
+<section id="about" class="about">
+  <h2>About Us</h2>
+  <div class="about-content">
+   <img src="images/Grace.jpeg" alt="Gracey smiling at a catering event" loading="lazy" class="about-img fade-in">
+    <div class="about-text fade-in">
+      <p>
+        Gracey’s Catering was founded with a passion for creating unforgettable dining experiences. 
+        From intimate family gatherings to large corporate events, Gracey brings elegance, flavor, 
+        and warmth to every occasion.
+      </p>
+      <p>
+        Our mission is simple: to serve delicious food beautifully presented, with service that makes 
+        every client feel valued. Whether it’s a wedding, birthday, or business function, we believe 
+        every event deserves a touch of grace.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Menu Section -->
+<section id="menu" class="menu">
+  <h2>Our Menu</h2>
+  <p>We offer catering packages tailored to every occasion.</p>
+  
+  <div class="menu-grid">
+    <div class="menu-card">
+      <h3>Wedding Package</h3>
+      <p>Elegant multi-course meals, beautifully presented for your special day.</p>
+      <p><strong>Starting at PGK 5,000</strong></p>
+    </div>
+    
+    <div class="menu-card">
+      <h3>Birthday Package</h3>
+      <p>Fun, vibrant dishes and desserts to make birthdays unforgettable.</p>
+      <p><strong>Starting at PGK 2,500</strong></p>
+    </div>
+    
+    <div class="menu-card">
+      <h3>Corporate Package</h3>
+      <p>Professional catering for meetings, conferences, and company events.</p>
+      <p><strong>Starting at PGK 4,000</strong></p>
+    </div>
+  </div>
+</section>
+
+
+ <!-- Gallery Section -->
+<section id="gallery" class="gallery">
+  <h2>Gallery</h2>
+  <p>A glimpse of our delicious creations and elegant setups.</p>
+  
+  <div class="gallery-grid">
+    <img src="images/dish1.jpg" alt="Beautifully plated dish">
+    <img src="images/dish2.jpg" alt="Buffet setup">
+    <img src="images/dish3.jpg" alt="Wedding catering table">
+    <img src="images/dish4.jpg" alt="Birthday cake and desserts">
+    <img src="images/dish5.jpg" alt="Corporate lunch spread">
+    <img src="images/dish6.jpg" alt="Outdoor catering event">
+  </div>
+</section>
+
+
+  <!-- Reviews Section -->
+<section id="reviews" class="reviews">
+  <h2>Client Reviews</h2>
+  <p>Here’s what our clients say about Gracey’s Catering.</p>
+
+  <div class="review-grid">
+    <div class="review-card">
+      <p>"Gracey’s Catering made our wedding unforgettable—the food was divine and the service flawless."</p>
+      <h4>- Anna & Michael</h4>
+    </div>
+
+    <div class="review-card">
+      <p>"Professional, delicious, and beautifully presented. Our corporate event was a success thanks to Gracey."</p>
+      <h4>- PNG Tech Solutions</h4>
+    </div>
+
+    <div class="review-card">
+      <p>"The birthday party catering was perfect—everyone loved the dishes and the warm service."</p>
+      <h4>- Sarah</h4>
+    </div>
+  </div>
+</section>
+
+<!-- Order Section -->
+<section id="order" class="order">
+  <h2>Place Your Order</h2>
+  <p>Fill out the form below to book catering for your event.</p>
+
+  <div class="order-grid">
+    <!-- Order Form -->
+    <form id="order-form">
+  <div class="form-row">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+  </div>
+
+  <div class="form-row">
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  </div>
+
+  <div class="form-row">
+    <label for="date">Event Date:</label>
+    <input type="date" id="date" name="date" required>
+  </div>
+
+  <div class="form-row">
+    <label for="guests">Number of Guests:</label>
+    <input type="number" id="guests" name="guests" placeholder="e.g. 50" required>
+  </div>
+
+  <div class="form-row">
+    <label for="package">Select Package:</label>
+    <select id="package" name="package" required>
+      <option value="family">Family Feast</option>
+      <option value="corporate">Corporate Lunch</option>
+      <option value="wedding">Wedding Banquet</option>
+    </select>
+  </div>
+
+  <div class="form-row">
+    <label for="notes">Special Notes:</label>
+    <textarea id="notes" name="notes" placeholder="Special requests..."></textarea>
+  </div>
+
+  <button type="submit">Confirm Booking</button>
+</form>
+
+    <!-- FAQ Section -->
+    <div class="faq">
+      <h3>Frequently Asked Questions</h3>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <button class="faq-question">What areas do you deliver to?</button>
+          <div class="faq-answer">We deliver across Port Moresby and nearby areas. For events outside, please contact us directly.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What is the minimum order size?</button>
+          <div class="faq-answer">Our minimum order is for 20 guests. Smaller events may be considered upon request.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What payment methods do you accept?</button>
+          <div class="faq-answer">We accept PayPal, CellMoni, and bank transfers.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Can I cancel or reschedule?</button>
+          <div class="faq-answer">Yes, cancellations must be made at least 48 hours before the event. Rescheduling is free if done in advance.</div>
+        </div>
+      </div>
+
+      <!-- Payment Note -->
+      <div class="payment-note">
+        <h4>💳 Pay with Digicel CellMoni</h4>
+        <p>Send your deposit directly via CellMoni for fast, secure payments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Payment Options --> 
+ <div class="payment"> <h3>Secure Your Booking</h3> <p>You can pay your deposit online using PayPal or Digicel CellMoni.</p> 
+    <!-- PayPal Button --> 
+     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"> 
+        <input type="hidden" name="cmd" value="_xclick"> <input type="hidden" name="business" value="gracey@gmail.com"> 
+        <input type="hidden" name="item_name" value="Catering Deposit"> <input type="hidden" name="currency_code" value="PGK"> 
+        <input type="hidden" name="amount" value="200.00"> 
+        <button type="submit">Pay Now with PayPal</button> 
+    </form>
+ </div>
+
+<!-- Contact Section -->
+<section id="contact" class="contact fade-in">
+  <h2>Contact Us</h2>
+  <p>We’d love to hear from you! Reach out for inquiries, bookings, or collaborations.</p>
+
+  <div class="contact-container">
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/xwvndkdn" method="POST" id="contact-form">
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br> 
+
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br> 
+
+      <label for="phone">Phone:</label><br>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{7,15}" placeholder="e.g. 70000000"><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" required></textarea><br><br> 
+
+      <!-- Hidden subject line -->
+      <input type="hidden" name="_subject" value="New message from Gracey's Catering website">
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p id="form-status"></p>
+    <div id="form-success" class="hidden">✅ Message Sent!</div>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+     <p><strong>Hours:</strong> Mon–Fri, 9 AM – 5 PM</p>
+     <p><strong>Email:</strong> <a href="mailto:gracescatering26@gmail.com">gracescatering26@gmail.com</a></p>
+     <p><strong>Phone:</strong> <a href="tel:+67578666646">+675 7866 6646</a></p>
+
+      <p><strong>Location:</strong> Port Moresby, Papua New Guinea</p>
+      <p>
+        <strong>Follow us:</strong> 
+        <a href="https://facebook.com" target="_blank">Facebook</a> | 
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </p>
+      <p>
+        <strong>WhatsApp:</strong> 
+        <a href="https://wa.me/67570000000" target="_blank">Chat with us</a>
+      </p>
+
+      <!-- Google Map Embed -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAPS_EMBED_LINK"
+          width="100%"
+          height="250"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    <!-- Get Directions Button --> 
+     <a href="https://www.google.com/maps/dir/?api=1&destination=Port+Moresby,+Papua+New+Guinea" 
+     target="_blank" class="map-button"> Get Directions </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <a href="#hero">Home</a> |
+      <a href="#about">About</a> |
+      <a href="#menu">Menu</a> |
+      <a href="#gallery">Gallery</a> |
+      <a href="#reviews">Reviews</a> |
+      <a href="#order">Order</a> |
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-social">
+      <a href="https://facebook.com" target="_blank">Facebook</a> |
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+
+    <!-- Copyright -->
+    <p>&copy; 2026 Gracey's Catering. All rights reserved.</p>
+
+    <!-- Back to Top -->
+    <a href="#hero" class="back-to-top">⬆ Back to Top</a>
+  </div>
+</footer>
+
+<script> document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener("click", function(e) { e.preventDefault(); document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" }); }); }); </script>
+
+<script>
+  // Highlight active nav link while scrolling
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll("nav a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 80; // adjust for sticky header
+      const sectionHeight = section.clientHeight;
+      if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+<script>
+  // Select all elements with the fade-in class
+  const faders = document.querySelectorAll('.fade-in');
+
+  // Create an IntersectionObserver to watch when elements enter the viewport
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible'); // trigger the fade-in
+      }
+    });
+  }, { threshold: 0.2 }); // 20% of element visible triggers animation
+
+  // Observe each fade-in element
+  faders.forEach(fader => {
+    observer.observe(fader);
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("form-status");
+    const success = document.getElementById("form-success");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          // Fade out form
+          form.classList.add("hidden");
+          form.classList.remove("show");
+
+          // Show success checkmark
+          success.classList.remove("hidden");
+          setTimeout(() => success.classList.add("show"), 100);
+
+          // Reset form fields
+          form.reset();
+
+          // After 3 seconds, fade form back in
+          setTimeout(() => {
+            success.classList.remove("show");
+            success.classList.add("hidden");
+            form.classList.remove("hidden");
+            form.classList.add("show");
+          }, 3000);
+
+          status.textContent = "";
+        } else {
+          status.textContent = "Oops! Something went wrong.";
+          status.style.color = "red";
+        }
+      } catch (error) {
+        status.textContent = "Network error. Please try again.";
+        status.style.color = "red";
+      }
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const questions = document.querySelectorAll(".faq-question");
+
+    questions.forEach(q => {
+      q.addEventListener("click", () => {
+        const answer = q.nextElementSibling;
+        answer.style.display = answer.style.display === "block" ? "none" : "block";
+      });
+    });
+  });
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
